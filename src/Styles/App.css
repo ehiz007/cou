@@ -1,0 +1,205 @@
+
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    /* red */
+    --primary-color: #bc2230;
+    --light-primary-color: #ff9b99;
+
+
+    /* grey */
+    --text-color: #172b4d;
+    --light-text-color: #b9b9b9;
+    --lighter-text-color: #ccc;
+
+    /* white */
+    --text-w-color: #fff;
+
+    /* black */
+    --text-b-color: black;
+
+}
+
+
+/*==================== VARIABLES CSS ====================*/
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*==================== SIGNIN ====================*/
+.signIn{
+    position: relative;
+    width: 100%;
+    
+    display: flex;
+}
+.signIn h1{
+    color: var(--primary-color);
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+.signIn p{
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    
+}
+
+input[type=text], input[type=password], 
+input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid var(--lighter-text-color);
+  border-radius: 15px;
+  transition: 0.5s;
+  outline: none;
+}
+input[type=text]:focus, input[type=password]:focus,
+input[type=email]:focus{
+    border: 1px solid var(--light-primary-color);
+}
+input[type=checkbox]{
+    accent-color: var(--primary-color);
+    
+}
+.keepMe{
+    font-weight: 400;
+}
+input[type=submit]{
+    background-color: var(--primary-color);
+    color: var(--text-w-color);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+.signIn button{
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid var(--lighter-text-color);
+    cursor: pointer;
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.signIn button:active{
+    border: 1px solid var(--light-primary-color);
+}
+
+
+.signIn .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+}
+
+.signIn .imgBx img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.signIn .contentBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+
+}
+.signIn .contentBx .formBx{
+    width: 70%;
+}
+.signIn .inputCheck{
+    display: flex;
+    justify-content: space-between;
+}
+.signIn .forgotPass span{
+    color: var(--primary-color);
+}
+.signIn .regLink{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width: 800px){
+    .signIn .imgBx{
+        display: none;
+    }
+    .signIn .contentBx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .signIn .contentBx .formBx{
+        width: 90%;
+        padding: 40px;
+    }
+    .signIn h1{
+        font-size: 30px;
+    }
+    .regLink{
+        text-align: center;
+    }
+
+}
+@media(max-width: 400px){
+    .signIn .contentBx .formBx{
+        padding: 20px;
+    }
+
+   
+}
+
+/*==================== SIGNUP ====================*/
+.HoriLine{
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+    font-weight: 500;
+
+}
+.HoriLine:before{
+    content: "";
+    width: 45%;
+    height: 1px;
+    display: block;
+    background: var(--lighter-text-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.HoriLine:after{
+    content: "";
+    width: 45%;
+    height: 1px;
+    display: block;
+    background: var(--lighter-text-color);
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
