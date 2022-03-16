@@ -235,7 +235,7 @@ input[type=submit]:hover
     left: 50%; 
     transform: translate(-50%, -50%);
     background: var( --light-primary-color);
-    color: white;
+    color: var(--text-w-color);
 }
 .package .bgIcon{
     font-size: 3.5rem;
@@ -313,7 +313,7 @@ input[type=submit]:hover
 
 .nav_ .demo{
     font-weight: bold;
-    color: black;
+    color: var(--text-b-color);
     /* border-bottom: 1px solid var(--primary-color); */
 }
 .nav_ .demo::after{
@@ -324,6 +324,62 @@ input[type=submit]:hover
     padding-bottom: 1rem;
 
 }
+
+/*======== INVENTORY ========*/
+.Main{
+    padding-top: 15%;
+}
+.Suppliers {
+    background: var(--text-w-color);
+}
+.Suppliers .btn{
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: var(--text-w-color);
+}
+.addSign{
+    font-size: 16px;
+}
+.Suppliers .form-control input[type="search"]{
+    background-color: var(--text-color);
+}
+.Suppliers .Actions{
+    display: flex;
+    justify-content: space-between;
+
+}
+.Suppliers .Actions > div:last-child{
+    display: flex;
+    justify-content: flex-end;
+}
+.Suppliers .Actions .del_{
+    background-color: rgba(185, 185, 185, 0.4);
+}
+.Suppliers .Actions .delSign{
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.Suppliers .Actions .export_{
+    background-color: rgba(188, 34, 48, 0.4);
+    color: var(--primary-color);
+    font-size: 13px;
+    
+}
+.nav-pills .nav-link{
+    border-bottom-left-radius: 0rem!important;
+    border-bottom-right-radius: 0rem!important;
+    background-color: rgba(204, 204, 204, 0.5);
+    color: var(--text-b-color)!important;
+}
+.nav-pills .nav-link.active{
+    border-bottom-left-radius: 0rem!important;
+    border-bottom-right-radius: 0rem!important;
+    background-color: var(--white-bg)!important;
+    color: var(--text-b-color)!important;
+}
+
+
 
 
 

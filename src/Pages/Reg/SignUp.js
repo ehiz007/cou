@@ -38,7 +38,7 @@ function SignUp({Package}) {
 		console.log(JSON.stringify(payLoad));
 		// console.log(data);
 		const baseUrl =  'http://couriax-saas-api.eba-huvccy4z.us-east-1.elasticbeanstalk.com';
-		const url = baseUrl + '/api/v1/auth/register/';
+		const url = baseUrl + '/api/v1/auth/login/';
 		axios
         .post(
     			url,
