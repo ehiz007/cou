@@ -447,6 +447,48 @@ table{
 .primary__{
     background: var(--primary-color)!important;
 }
+.wigIcon{
+    
+    background: var(--text-w-color);
+   
+}
+.wigging{
+    background: var(--primary-color);
+    color: var(--text-w-color);
+    padding: 1rem!important;
+    
+}
+.wigging_content{
+    display: flex;
+    justify-content: space-between;
+}
+.view__{
+    text-decoration: underline!important;
+}
+.styling{
+    background: var(--text-w-color);
+    color: var(--lighter-text-color);
+    padding: 1rem!important;
+    border: 2px solid var(--lighter-text-color);
+}
+.styling .wigIcon{
+    border: 1px solid var(--lighter-text-color);
+}
+
+.add_storage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+
+}
+.add_storage .addIcon{
+    font-size: 3rem;
+}
+.add_storage .addIcon + span{
+    font-weight: bolder;
+}
 
 
 

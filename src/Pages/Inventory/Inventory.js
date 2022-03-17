@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import Navbar  from '../../Components/Navbar';
-import { AiFillDelete, AiFillCaretDown, AiFillEye } from 'react-icons/ai';
+import { AiFillDelete, AiFillCaretDown, AiFillEye, AiOutlinePlusCircle } from 'react-icons/ai';
 import { MdOutlineEdit } from 'react-icons/md';
 import { IoStatsChart } from "react-icons/io5";
+import { GrUserFemale } from 'react-icons/gr';
 // import { IoIosArrowForward } from "react-icons/io";
-// import { HiOutlineDotsVertical } from 'react-icons/hi';
+import { HiOutlineDotsVertical } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import { MDBProgress, MDBProgressBar } from 'mdb-react-ui-kit';
 import { MDBBtn, MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane } from 'mdb-react-ui-kit';
@@ -713,10 +714,63 @@ function Inventory() {
                                     </div>
                                    
                                     <div className="row">
-                                        <div className="col-md-4">
+                                        <div className="col-md-3">
+                                            <div className='card__ wigging mb-0'>
+                                                <h6 className='my-3'><b>Wigging</b></h6>
+                                                <div className='wigging_content mt-4 mb-2'>
+                                                    <div>
+                                                        <span className='rounded-circle p-2 wigIcon'><GrUserFemale /></span>&nbsp;
+                                                        <span>20 products</span>
+                                                    </div>
+                                                    <div>
+                                                        <span className='view__'>View</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
                                             
                                         </div>
-                                        
+                                        <div className="col-md-3">
+                                            <div className='card__ styling mb-0'>
+                                                <h6 className='my-3'><b>Styling</b></h6>
+                                                <div className='wigging_content mt-4 mb-2'>
+                                                    <div>
+                                                        <span className='rounded-circle p-2 wigIcon'><GrUserFemale /></span>&nbsp;
+                                                        <span>20 products</span>
+                                                    </div>
+                                                    <div>
+                                                        <span className='view__'>View</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div className="col-md-3">
+                                            <div className='card__ styling mb-0'>
+                                                <h6 className='my-3'><b>Dyeing</b></h6>
+                                                <div className='wigging_content mt-4 mb-2'>
+                                                    <div>
+                                                        <span className='rounded-circle p-2 wigIcon'><GrUserFemale /></span>&nbsp;
+                                                        <span>20 products</span>
+                                                    </div>
+                                                    <div>
+                                                        <span className='view__'>View</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div className="col-md-3">
+                                            <div className='card__ styling mb-0'>
+                                                <div className='add_storage '>
+                                                    <span className='addIcon'><AiOutlinePlusCircle /></span>
+                                                    <span><b>Add Storage</b></span>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
                                     </div>
 
                                     
@@ -725,128 +779,75 @@ function Inventory() {
                                        <table className="table mt-5">
                                             <thead className="table-light">
                                                 <tr>
-                                                    <th scope="col">
-                                                        <div className="form-check">
-                                                        {/* <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" /> */}
-                                                        </div>
-                                                    </th>
-                                                    <th scope="col"><b>Product Name</b></th>
-                                                    <th scope="col"><b>Product ID</b></th>
-                                                    <th scope="col"><b>Quantity</b></th>
-                                                    <th scope="col"><b>Supplier</b></th>
-                                                    
-                                                    <th scope="col"><b>Stock Level <span>(4 weeks run rate)</span></b></th>
+                                                   
+                                                    <th scope="col"><b>Product</b></th>
+                                                    <th scope="col"><b>Customer Name</b></th>
+                                                    <th scope="col"><b>SKU</b></th>
+                                                    <th scope="col"><b>PO ID</b></th>
+                                                    <th scope="col"><b>Status</b></th>
+                                                    <th scope="col"><b>Action</b></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th scope="row">
-                                                        <div className="form-check">
-                                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                                        </div>
-                                                    </th>
-                                                    <td>Human Hair</td>
-                                                    <td>000000235</td>
-                                                    <td>35 PCS</td>
-                                                    <td>150,000</td>
+    
                                                     <td>
-                                                        <MDBProgress height='20'>
-                                                            <MDBProgressBar className='primary__' width='25' valuemin={0} valuemax={100}>
-                                                                25%
-                                                            </MDBProgressBar>
-                                                        </MDBProgress>
+                                                       <GrUserFemale />&nbsp;
+                                                        Short Bob Wig
                                                     </td>
+                                                    <td>Lace Wig</td>
+                                                    <td>00000</td>
+                                                    <td>ikdrhwe</td>
+                                                    <td>
+                                                        <Link className="btn btn-sm export_" to="/#!">
+                                                            pending
+                                                        </Link>
+                                                    </td>
+                                                    <td>< HiOutlineDotsVertical /></td>
                                                     
                                                 
                                                 
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">
-                                                        <div className="form-check">
-                                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                                        </div>
-                                                    </th>
-                                                    <td>Human Hair</td>
-                                                    <td>000000235</td>
-                                                    <td>35 PCS</td>
-                                                    <td>150,000</td>
+    
                                                     <td>
-                                                        <MDBProgress height='20'>
-                                                            <MDBProgressBar className='primary__' width='47' valuemin={0} valuemax={100}>
-                                                                47%
-                                                            </MDBProgressBar>
-                                                        </MDBProgress>
+                                                       <GrUserFemale />&nbsp;
+                                                        Short Bob Wig
                                                     </td>
+                                                    <td>Lace Wig</td>
+                                                    <td>00000</td>
+                                                    <td>ikdrhwe</td>
+                                                    <td>
+                                                        <Link className="btn btn-sm export_" to="/#!">
+                                                            pending
+                                                        </Link>
+                                                    </td>
+                                                    <td>< HiOutlineDotsVertical /></td>
                                                     
                                                 
                                                 
                                                 </tr>
-                                              
-                                              <tr>
-                                                    <th scope="row">
-                                                        <div className="form-check">
-                                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                                        </div>
-                                                    </th>
-                                                    <td>Human Hair</td>
-                                                    <td>000000235</td>
-                                                    <td>35 PCS</td>
-                                                    <td>150,000</td>
+                                                <tr>
+    
                                                     <td>
-                                                        <MDBProgress height='20'>
-                                                            <MDBProgressBar className='primary__' width='25' valuemin={0} valuemax={100}>
-                                                                25%
-                                                            </MDBProgressBar>
-                                                        </MDBProgress>
+                                                       <GrUserFemale />&nbsp;
+                                                        Short Bob Wig
                                                     </td>
+                                                    <td>Lace Wig</td>
+                                                    <td>00000</td>
+                                                    <td>ikdrhwe</td>
+                                                    <td>
+                                                        <Link className="btn btn-sm export_" to="/#!">
+                                                            pending
+                                                        </Link>
+                                                    </td>
+                                                    <td>< HiOutlineDotsVertical /></td>
                                                     
                                                 
                                                 
                                                 </tr>
-                                              
-                                              <tr>
-                                                    <th scope="row">
-                                                        <div className="form-check">
-                                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                                        </div>
-                                                    </th>
-                                                    <td>Human Hair</td>
-                                                    <td>000000235</td>
-                                                    <td>35 PCS</td>
-                                                    <td>150,000</td>
-                                                    <td>
-                                                        <MDBProgress height='20'>
-                                                            <MDBProgressBar className='primary__' width='55' valuemin={0} valuemax={100}>
-                                                                55%
-                                                            </MDBProgressBar>
-                                                        </MDBProgress>
-                                                    </td>
-                                                    
                                                 
-                                                
-                                                </tr>
-                                              
-                                              <tr>
-                                                    <th scope="row">
-                                                        <div className="form-check">
-                                                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                                        </div>
-                                                    </th>
-                                                    <td>Human Hair</td>
-                                                    <td>000000235</td>
-                                                    <td>35 PCS</td>
-                                                    <td>150,000</td>
-                                                    <td>
-                                                        <MDBProgress height='20'>
-                                                            <MDBProgressBar className='primary__' width='85' valuemin={0} valuemax={100}>
-                                                                85%
-                                                            </MDBProgressBar>
-                                                        </MDBProgress>
-                                                    </td>
-                                                    
-                                                
-                                                
-                                                </tr>
+                                            
                                               
                                               
                                             </tbody>
