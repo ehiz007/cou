@@ -379,6 +379,75 @@ input[type=submit]:hover
     color: var(--text-b-color)!important;
 }
 
+/* Stock-mgt */
+.card__ {
+    padding: 1rem 2rem 3rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--grey-bg);
+    color: var(--text-b-color);
+  
+   
+}
+.card__ h6{
+    font-weight: bolder;
+}
+.card__ .card_group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.card__ .group{
+   display: flex;
+   justify-content: flex-start;
+
+}
+.card__ .logo{
+    background-color: rgba(188, 34, 48, 0.3);
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 0.9rem;
+   
+}
+.card__ .content h6{
+    color: var( --light-text-color);
+}
+.card__ .content h2{
+    font-weight: bolder;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 0.01rem solid #6c6e6e;
+    
+}
+.detail h4{
+    font-weight: bolder;
+}
+.info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+table{
+    margin-left: auto!important;
+    margin-right: auto!important;
+    width: 100%!important;
+}
+.table-responsive{
+    width: 100%!important;
+}
+.primary__{
+    background: var(--primary-color)!important;
+}
+
 
 
 
